@@ -40,7 +40,7 @@ export function AnimatedBackground({ className }: AnimatedBackgroundProps) {
       speedY: number;
       opacity: number;
 
-      constructor() {
+      constructor(private canvas: HTMLCanvasElement) {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.size = Math.random() * 5 + 1;
@@ -53,14 +53,14 @@ export function AnimatedBackground({ className }: AnimatedBackgroundProps) {
         this.x += this.speedX;
         this.y += this.speedY;
 
-        if (this.x > canvas.width) this.x = 0;
-        else if (this.x < 0) this.x = canvas.width;
+        if (this.x > this.canvas.width) this.x = 0;
+        else if (this.x < 0) this.x = this.canvas.width;
 
-        if (this.y > canvas.height) this.y = 0;
-        else if (this.y < 0) this.y = canvas.height;
+        if (this.y > this.canvas.height) this.y = 0;
+        else if (this.y < 0) this.y = this.canvas.height;
       }
 
-      draw() {
+      draw(ctx: CanvasRenderingContext2D, baseColor: string) {
         ctx.fillStyle = `rgba(${baseColor}, ${this.opacity})`;
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
@@ -71,7 +71,7 @@ export function AnimatedBackground({ className }: AnimatedBackgroundProps) {
     // Initialize particles
     const init = () => {
       for (let i = 0; i < numberOfParticles; i++) {
-        particlesArray.push(new Particle());
+        particlesArray.push(new Particle(canvas));
       }
     };
 
@@ -85,9 +85,9 @@ export function AnimatedBackground({ className }: AnimatedBackgroundProps) {
           const dx = particlesArray[a].x - particlesArray[b].x;
           const dy = particlesArray[a].y - particlesArray[b].y;
           const distance = Math.sqrt(dx * dx + dy * dy);
-          
+
           if (distance < 100) {
-            opacity = 0.1 - (distance / 10000);
+            opacity = 0.1 - distance / 10000;
             ctx.strokeStyle = `rgba(${baseColor}, ${opacity})`;
             ctx.lineWidth = 0.5;
             ctx.beginPath();
@@ -102,12 +102,12 @@ export function AnimatedBackground({ className }: AnimatedBackgroundProps) {
     // Animation loop
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-      
+
       for (let i = 0; i < particlesArray.length; i++) {
         particlesArray[i].update();
-        particlesArray[i].draw();
+        particlesArray[i].draw(ctx, baseColor);
       }
-      
+
       connect();
       requestAnimationFrame(animate);
     };
