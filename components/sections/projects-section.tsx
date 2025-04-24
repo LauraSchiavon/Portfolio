@@ -6,7 +6,16 @@ import { AnimatedSection } from "@/components/animated-section";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/projects";
 
-const categories = ["All", "React", "HTML", "Vue.js", "Unity", "C#", "CSS"];
+const categories = [
+  "All",
+  "React",
+  "HTML",
+  "Strapi",
+  "Next.js",
+  "Unity",
+  "C#",
+  "CSS",
+];
 
 export function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("All");

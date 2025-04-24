@@ -59,7 +59,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       <div className="p-5">
         <h3 className="text-xl font-bold">{project.title}</h3>
         <p className="mt-2 text-muted-foreground">{project.description}</p>
-        
+
         <div className="mt-4 flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
             <Badge key={tech} variant="secondary">
@@ -67,12 +67,12 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             </Badge>
           ))}
         </div>
-        
+
         <div className="mt-6 flex items-center justify-between">
           {project.demoUrl && (
             <Button asChild>
-              <Link 
-                href={project.demoUrl} 
+              <Link
+                href={project.demoUrl}
                 target="_blank"
                 className="flex items-center gap-1"
               >
@@ -80,11 +80,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               </Link>
             </Button>
           )}
-          
+
           {project.githubUrl && (
             <Button variant="outline" asChild>
-              <Link 
-                href={project.githubUrl} 
+              <Link
+                href={project.githubUrl}
                 target="_blank"
                 className="flex items-center gap-1"
               >
