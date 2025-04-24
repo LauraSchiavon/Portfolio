@@ -16,7 +16,7 @@ export const projects = [
     description:
       "This project was inspired by Intibiome's visual identity and values, with a focus on a clean, responsive design aligned with good front-end development practices. The goal was to create an intuitive and modern experience, highlighting the presentation of products and information in a clear and attractive way.",
     imageUrl:
-      "https://www.parapharmadirect.com/files/thumbs/catalog/brands/logos/brand-img/logo-intibiome.jpg",
+      "https://www.parapharmacie-express.com/27811-large_default/intibiome-bien-etre-ph-40-soin-lavant-hygiene-intime-250ml.jpg",
     // demoUrl: "https://example.com/demo2",
     githubUrl: "https://github.com/LauraSchiavon/Site-Intibiome",
     technologies: ["HTML", "CSS"],

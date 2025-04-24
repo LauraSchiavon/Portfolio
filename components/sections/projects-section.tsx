@@ -6,7 +6,7 @@ import { AnimatedSection } from "@/components/animated-section";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/projects";
 
-const categories = ["All", "React", "Next.js", "Vue.js", "Angular", "Node.js"];
+const categories = ["All", "React", "HTML", "Vue.js", "Unity", "C#", "CSS"];
 
 export function ProjectsSection() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -14,7 +14,7 @@ export function ProjectsSection() {
 
   const filterProjects = (category: string) => {
     setActiveCategory(category);
-    
+
     if (category === "All") {
       setVisibleProjects(projects);
     } else {
@@ -26,17 +26,14 @@ export function ProjectsSection() {
   };
 
   return (
-    <AnimatedSection
-      id="projects"
-      className="py-20 bg-muted/40"
-    >
+    <AnimatedSection id="projects" className="py-20 bg-muted/40">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold sm:text-4xl">My Projects</h2>
           <div className="mx-auto h-1 w-20 bg-primary"></div>
           <p className="mx-auto mt-6 max-w-2xl text-muted-foreground">
-            Explore my recent work and projects. Each project represents a unique
-            challenge and solution, showcasing my skills and expertise.
+            Explore my recent work and projects. Each project represents a
+            unique challenge and solution, showcasing my skills and expertise.
           </p>
         </div>
 
@@ -61,7 +58,8 @@ export function ProjectsSection() {
           ) : (
             <div className="col-span-full py-12 text-center">
               <p className="text-muted-foreground">
-                No projects found with the selected technology. Try another filter.
+                No projects found with the selected technology. Try another
+                filter.
               </p>
               <Button
                 variant="link"
