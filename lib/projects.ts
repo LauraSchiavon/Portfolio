@@ -38,7 +38,7 @@ export const projects = [
     description:
       "This project was inspired by Intibiome's visual identity and values, with a focus on a clean, responsive design aligned with good front-end development practices. The goal was to create an intuitive and modern experience, highlighting the presentation of products and information in a clear and attractive way.",
     imageUrl:
-      "https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-078c-61f7-9a55-e98e9f44d368/raw?se=2025-04-24T13%3A34%3A17Z&sp=r&sv=2024-08-04&sr=b&scid=44bfaf5b-80f4-568d-b84e-701dae69a618&skoid=ae70be19-8043-4428-a990-27c58b478304&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-24T03%3A29%3A22Z&ske=2025-04-25T03%3A29%3A22Z&sks=b&skv=2024-08-04&sig=WjJqK785sq7catLAy3q4si2g5R80tHrmzrIse/0KJtg%3D",
+      "https://img.hwahae.co.kr/commerce/goods/20230531_155529_thumnail_5.jpg",
     // demoUrl: "https://example.com/demo2",
     githubUrl: "https://github.com/LauraSchiavon/Site-Intibiome",
     technologies: ["HTML", "CSS"],
