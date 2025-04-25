@@ -4,8 +4,7 @@ export const projects = [
     title: "Senno Website",
     description:
       "The project focused on responsiveness, performance and easy content maintenance. Integration with Strapi allows the team to edit texts and images independently, while the front-end in Next.js ensures fast loading and fluid navigation. The clean and objective design reflects professionalism and clarity in the presentation of services.",
-    imageUrl:
-      "https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-09f4-61f7-b153-bff0ce789756/raw?se=2025-04-24T13%3A48%3A02Z&sp=r&sv=2024-08-04&sr=b&scid=656adbd9-4812-51c4-a7ee-4f3da6455671&skoid=ae70be19-8043-4428-a990-27c58b478304&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-24T03%3A27%3A57Z&ske=2025-04-25T03%3A27%3A57Z&sks=b&skv=2024-08-04&sig=VNAI%2B%2BRvYPVSPVbSZX%2B8BeY/7QPelqbXu4Ek6%2BtV2qQ%3D",
+    imageUrl: "/image/senno.png",
     demoUrl: "https://senno.ai/pt-BR",
     // githubUrl: "https://github.com/LauraSchiavon/Site-ProjetoReger",
     technologies: ["Next.js", "Strapi", "TailwindCSS"],
@@ -15,8 +14,7 @@ export const projects = [
     title: "Abranet WebSite",
     description:
       "Creation of the Abranet website with a focus on performance and content management. The application was developed to ensure a modern, scalable and easy-to-maintain architecture. The website allows the team to edit content directly in the CMS, with a user-friendly interface and real-time updates. The responsive and organized design provides an excellent browsing experience on any device.",
-    imageUrl:
-      "https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-83f0-61f7-98f1-a94f5ef382ef/raw?se=2025-04-24T13%3A54%3A01Z&sp=r&sv=2024-08-04&sr=b&scid=f70b14ad-67c3-50bc-bf24-c6ed4d7f9ee0&skoid=ae70be19-8043-4428-a990-27c58b478304&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-24T03%3A29%3A07Z&ske=2025-04-25T03%3A29%3A07Z&sks=b&skv=2024-08-04&sig=vymLqnHD2tOmwAbi2rG2gAlGRhqpymP5mIUjrsch1pI%3D",
+    imageUrl: "/image/abranet.png",
     demoUrl: "https://www.abranet.org.br/",
     // githubUrl: "https://github.com/LauraSchiavon/Site-ProjetoReger",
     technologies: ["Next.js", "Strapi", "TailwindCSS"],
@@ -48,8 +46,7 @@ export const projects = [
     title: "Games for people with cognitive problems",
     description:
       "Development of a platform with interactive games aimed at cognitive stimulation for the elderly, including Memory Games, Sudoku and Minesweeper. The games were adapted to promote skills such as attention, logical reasoning and decision-making, helping to care for mental health in a fun and accessible way.",
-    imageUrl:
-      "https://sdmntprwestus.oaiusercontent.com/files/00000000-527c-6230-a701-30be1f3bb8b2/raw?se=2025-04-24T14%3A32%3A33Z&sp=r&sv=2024-08-04&sr=b&scid=c4fb36aa-834f-5882-ae83-ea8a5cdf35ce&skoid=e872f19f-7b7f-4feb-9998-20052dec61d6&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-24T07%3A43%3A59Z&ske=2025-04-25T07%3A43%3A59Z&sks=b&skv=2024-08-04&sig=REtbgTeLeLPiXslkEhEe5yEgrNqsoLaUtxefysiz4Ho%3D",
+    imageUrl: "/image/jogo.png",
     // demoUrl: "https://example.com/demo3",
     githubUrl: "https://github.com/LauraSchiavon/IC",
     technologies: ["C#", "Unity"],
