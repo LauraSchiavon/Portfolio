@@ -1,15 +1,18 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'My Portfolio',
-  description: 'A showcase of my skills and projects',
+  title: "Portfolio Laura Schiavon",
+  description: "A showcase of my skills and projects",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
