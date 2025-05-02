@@ -51,4 +51,24 @@ export const projects = [
     githubUrl: "https://github.com/LauraSchiavon/IC",
     technologies: ["C#", "Unity"],
   },
+  {
+    id: "project-6",
+    title: "Vistori Piracicaba WebSite",
+    description:
+      "Development of a responsive and intuitive website for Vistori Piracicaba, focused on the clear presentation of vehicle inspection and placement services, with easy navigation for users.",
+    imageUrl: "/image/vistori.jpeg",
+    demoUrl: "https://www.vistoripiracicaba.com.br/",
+    githubUrl: "https://github.com/LauraSchiavon/vistoriPiracicabaWebSite",
+    technologies: ["React", "Vite", "Tailwind"],
+  },
+  {
+    id: "project-7",
+    title: "PlacaNew WebSite",
+    description:
+      "Development of the Placa New website with a modern and functional design, highlighting the registration and regularization services, with a layout optimized for mobile devices and desktop.",
+    imageUrl: "/image/placanew.jpeg",
+    demoUrl: "https://www.placanewpiracicaba.com/",
+    githubUrl: "https://github.com/LauraSchiavon/placaNewWebSite",
+    technologies: ["React", "Vite", "Tailwind"],
+  },
 ];

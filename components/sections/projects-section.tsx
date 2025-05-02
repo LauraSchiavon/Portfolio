@@ -15,6 +15,7 @@ const categories = [
   "Unity",
   "C#",
   "CSS",
+  "Vite",
 ];
 
 export function ProjectsSection() {
