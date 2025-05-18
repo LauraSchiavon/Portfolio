@@ -82,7 +82,8 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-6 border-t border-border">
           <p className="text-center text-muted-foreground">
-            &copy; {currentYear} Portfolio. All rights reserved.
+            &copy; {currentYear} Portfolio. Developed by Laura Schiavon. All
+            rights reserved.
           </p>
         </div>
       </div>

@@ -16,6 +16,7 @@ const categories = [
   "C#",
   "CSS",
   "Vite",
+  "JavaScript",
 ];
 
 export function ProjectsSection() {

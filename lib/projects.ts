@@ -59,7 +59,7 @@ export const projects = [
     imageUrl: "/image/vistori.jpeg",
     demoUrl: "https://www.vistoripiracicaba.com.br/",
     githubUrl: "https://github.com/LauraSchiavon/vistoriPiracicabaWebSite",
-    technologies: ["React", "Vite", "Tailwind"],
+    technologies: ["React", "Vite", "Tailwind", "JavaScript"],
   },
   {
     id: "project-7",
@@ -69,6 +69,26 @@ export const projects = [
     imageUrl: "/image/placanew.jpeg",
     demoUrl: "https://www.placanewpiracicaba.com/",
     githubUrl: "https://github.com/LauraSchiavon/placaNewWebSite",
-    technologies: ["React", "Vite", "Tailwind"],
+    technologies: ["React", "Vite", "Tailwind", "JavaScript"],
+  },
+  {
+    id: "project-8",
+    title: "Organo Alura",
+    description:
+      "creation of an application from scratch, which manages Alura employees.",
+    imageUrl: "/image/organo.png",
+    demoUrl: "https://organo-alura-weld.vercel.app/",
+    githubUrl: "https://github.com/LauraSchiavon/organo",
+    technologies: ["React", "JavaScript", "CSS"],
+  },
+  {
+    id: "project-9",
+    title: "Sansch WebSite",
+    description:
+      "Developed the institutional website for Sansch, a company specializing in digital marketing with a focus on social media and paid traffic. The project features a modern and responsive design, highlighting the company’s services, client testimonials, and a clear call-to-action. The layout was carefully crafted to ensure smooth navigation and optimize lead generation.",
+    imageUrl: "/image/sansch.png",
+    demoUrl: "https://sansch-web-site.vercel.app/",
+    githubUrl: "https://github.com/LauraSchiavon/SanschWebSite",
+    technologies: ["Next.js", "Tailwind"],
   },
 ];

@@ -34,8 +34,9 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative overflow-hidden rounded-lg border border-border bg-card shadow-md transition-all duration-300 hover:shadow-xl"
+      className="group relative flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-md transition-all duration-300 hover:shadow-xl min-h-[500px]"
     >
+      {/* Imagem do projeto */}
       <div className="aspect-video w-full overflow-hidden">
         <div className="relative h-full w-full">
           <Image
@@ -56,7 +57,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         </div>
       </div>
 
-      <div className="p-5">
+      {/* Conteúdo do card */}
+      <div className="p-5 flex flex-col h-full">
         <h3 className="text-xl font-bold">{project.title}</h3>
         <p className="mt-2 text-muted-foreground">{project.description}</p>
 
@@ -68,7 +70,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           ))}
         </div>
 
-        <div className="mt-6 flex items-center justify-between">
+        {/* Botões fixos no final */}
+        <div className="mt-auto flex items-center gap-4">
           {project.demoUrl && (
             <Button asChild>
               <Link

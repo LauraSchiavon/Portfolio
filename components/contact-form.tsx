@@ -49,7 +49,7 @@ export function ContactForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       console.log(values);
@@ -126,7 +126,11 @@ export function ContactForm() {
           )}
         />
 
-        <Button type="submit" className="w-full md:w-auto" disabled={isSubmitting}>
+        <Button
+          type="submit"
+          className="w-full md:w-auto"
+          disabled={isSubmitting}
+        >
           {isSubmitting ? (
             <>Sending...</>
           ) : (
