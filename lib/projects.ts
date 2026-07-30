@@ -140,6 +140,18 @@ export const projects = [
   },
   {
     id: "project-11",
+    title: "Vistori Louveira WebSite",
+    titlePt: "Site da Vistori Louveira",
+    description:
+      "Development of a responsive website for Vistori Louveira, focused on the clear presentation of vehicle inspection services, with WhatsApp contact integration and an appointment-scheduling modal connected to a Make.com automation webhook.",
+    descriptionPt:
+      "Desenvolvimento de um site responsivo para a Vistori Louveira, focado na apresentação clara dos serviços de vistoria veicular, com integração de contato via WhatsApp e um modal de agendamento conectado a uma automação via webhook do Make.com.",
+    imageUrl: "/image/vistori-louveira.jpeg",
+    year: 2025,
+    technologies: ["React", "Vite", "TypeScript", "Tailwind"],
+  },
+  {
+    id: "project-12",
     title: "PlacaNew WebSite",
     titlePt: "Site da PlacaNew",
     description:
@@ -153,7 +165,7 @@ export const projects = [
     technologies: ["React", "Vite", "Tailwind", "JavaScript"],
   },
   {
-    id: "project-12",
+    id: "project-13",
     title: "Organo Alura",
     titlePt: "Organo Alura",
     description:
@@ -166,7 +178,7 @@ export const projects = [
     technologies: ["React", "JavaScript", "CSS"],
   },
   {
-    id: "project-13",
+    id: "project-14",
     title: "Sansch WebSite",
     titlePt: "Site da Sansch",
     description:
@@ -180,7 +192,7 @@ export const projects = [
     technologies: ["Next.js", "Tailwind"],
   },
   {
-    id: "project-14",
+    id: "project-15",
     title: "Senno Website",
     titlePt: "Site da Senno",
     description:
@@ -194,7 +206,7 @@ export const projects = [
     technologies: ["Next.js", "Strapi", "TailwindCSS"],
   },
   {
-    id: "project-15",
+    id: "project-16",
     title: "Abranet WebSite",
     titlePt: "Site da Abranet",
     description:
@@ -208,7 +220,7 @@ export const projects = [
     technologies: ["Next.js", "Strapi", "TailwindCSS"],
   },
   {
-    id: "project-16",
+    id: "project-17",
     title: "Reger Project",
     titlePt: "Projeto Reger",
     description:
@@ -223,7 +235,7 @@ export const projects = [
     technologies: ["React", "TypeScript", "CSS", "Vite"],
   },
   {
-    id: "project-17",
+    id: "project-18",
     title: "Intibiome",
     titlePt: "Intibiome",
     description:
@@ -238,7 +250,7 @@ export const projects = [
     technologies: ["HTML", "CSS"],
   },
   {
-    id: "project-18",
+    id: "project-19",
     title: "Games for people with cognitive problems",
     titlePt: "Jogos para pessoas com problemas cognitivos",
     description:
