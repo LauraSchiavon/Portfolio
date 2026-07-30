@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <footer className="border-t bg-muted/40">
@@ -10,19 +16,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Portfolio</h3>
-            <p className="text-muted-foreground">
-              Showcasing my skills and projects in web development and design.
-            </p>
+            <p className="text-muted-foreground">{t.footer.tagline}</p>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              {t.footer.quickLinks}
+            </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="#home"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Home
+                  {t.nav.home}
                 </Link>
               </li>
               <li>
@@ -30,7 +36,7 @@ export default function Footer() {
                   href="#about"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  About
+                  {t.nav.about}
                 </Link>
               </li>
               <li>
@@ -38,7 +44,7 @@ export default function Footer() {
                   href="#projects"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Projects
+                  {t.nav.projects}
                 </Link>
               </li>
               <li>
@@ -46,13 +52,13 @@ export default function Footer() {
                   href="#contact"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Contact
+                  {t.nav.contact}
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Connect</h3>
+            <h3 className="text-lg font-semibold mb-4">{t.footer.connect}</h3>
             <div className="flex space-x-4">
               <Link
                 href="https://github.com/LauraSchiavon"
@@ -82,8 +88,8 @@ export default function Footer() {
         </div>
         <div className="mt-8 pt-6 border-t border-border">
           <p className="text-center text-muted-foreground">
-            &copy; {currentYear} Portfolio. Developed by Laura Schiavon. All
-            rights reserved.
+            &copy; {currentYear} Portfolio. {t.footer.developedBy}{" "}
+            {t.footer.rights}
           </p>
         </div>
       </div>

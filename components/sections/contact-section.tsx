@@ -3,18 +3,21 @@
 import { Github, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 import { AnimatedSection } from "@/components/animated-section";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 export function ContactSection() {
+  const { language } = useLanguage();
+  const t = translations[language].contact;
+
   return (
     <AnimatedSection id="contact" className="py-20">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Get In Touch</h2>
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">{t.title}</h2>
           <div className="mx-auto h-1 w-20 bg-primary"></div>
           <p className="mx-auto mt-6 max-w-2xl text-muted-foreground">
-            Interested in working together or have a question? Feel free to
-            reach out using the contact form below or through my contact
-            details.
+            {t.subtitle}
           </p>
         </div>
 
@@ -22,7 +25,7 @@ export function ContactSection() {
           {/* Contato */}
           <div className="max-w-sm mx-auto text-left">
             <h3 className="mb-6 text-2xl font-bold text-center">
-              Contact Information
+              {t.infoTitle}
             </h3>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
@@ -30,7 +33,7 @@ export function ContactSection() {
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium">Email</h4>
+                  <h4 className="text-lg font-medium">{t.email}</h4>
                   <a
                     href="mailto:lauraschiavon00@gmail.com"
                     className="text-muted-foreground hover:text-foreground"
@@ -44,7 +47,7 @@ export function ContactSection() {
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium">Phone</h4>
+                  <h4 className="text-lg font-medium">{t.phone}</h4>
                   <a
                     href="tel:+5514997342092"
                     className="text-muted-foreground hover:text-foreground"
@@ -58,10 +61,8 @@ export function ContactSection() {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-lg font-medium">Location</h4>
-                  <p className="text-muted-foreground">
-                    Bariri, São Paulo, Brasil
-                  </p>
+                  <h4 className="text-lg font-medium">{t.location}</h4>
+                  <p className="text-muted-foreground">{t.locationValue}</p>
                 </div>
               </div>
             </div>
@@ -69,7 +70,7 @@ export function ContactSection() {
 
           {/* Redes sociais */}
           <div>
-            <h3 className="mb-6 text-2xl font-bold">Follow Me</h3>
+            <h3 className="mb-6 text-2xl font-bold">{t.followTitle}</h3>
             <div className="flex justify-center space-x-6">
               <a
                 href="https://github.com/LauraSchiavon"

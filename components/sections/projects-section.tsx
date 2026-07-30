@@ -5,6 +5,8 @@ import { ProjectCard, Project } from "@/components/project-card";
 import { AnimatedSection } from "@/components/animated-section";
 import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/projects";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 const categories = [
   "All",
@@ -17,9 +19,37 @@ const categories = [
   "CSS",
   "Vite",
   "JavaScript",
+  "Three.js",
+  "React Three Fiber",
+  "GSAP",
+  "Framer Motion",
+  "i18next",
+  "Express",
+  "8th Wall",
+  "WebAR",
+  "TypeScript",
+  "Webpack",
+  "TanStack Query",
+  "Formik",
+  "Material UI",
+  "Supabase",
+  "Recoil",
+  "Anime.js",
+  "Generative AI (Gemini)",
+  "Vue.js",
+  "Tailwind",
+  "JSZip",
+  "Python",
+  "Playwright",
+  "Flask",
+  "SQLite",
+  "GoDaddy API",
+  "Docker",
 ];
 
 export function ProjectsSection() {
+  const { language } = useLanguage();
+  const t = translations[language].projects;
   const [activeCategory, setActiveCategory] = useState("All");
   const [visibleProjects, setVisibleProjects] = useState<Project[]>(projects);
 
@@ -40,11 +70,10 @@ export function ProjectsSection() {
     <AnimatedSection id="projects" className="py-20 bg-muted/40">
       <div className="container mx-auto px-4">
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">My Projects</h2>
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl">{t.title}</h2>
           <div className="mx-auto h-1 w-20 bg-primary"></div>
           <p className="mx-auto mt-6 max-w-2xl text-muted-foreground">
-            Explore my recent work and projects. Each project represents a
-            unique challenge and solution, showcasing my skills and expertise.
+            {t.subtitle}
           </p>
         </div>
 
@@ -56,7 +85,7 @@ export function ProjectsSection() {
               size="sm"
               onClick={() => filterProjects(category)}
             >
-              {category}
+              {category === "All" ? t.all : category}
             </Button>
           ))}
         </div>
@@ -68,16 +97,13 @@ export function ProjectsSection() {
             ))
           ) : (
             <div className="col-span-full py-12 text-center">
-              <p className="text-muted-foreground">
-                No projects found with the selected technology. Try another
-                filter.
-              </p>
+              <p className="text-muted-foreground">{t.empty}</p>
               <Button
                 variant="link"
                 className="mt-2"
                 onClick={() => filterProjects("All")}
               >
-                View all projects
+                {t.viewAll}
               </Button>
             </div>
           )}

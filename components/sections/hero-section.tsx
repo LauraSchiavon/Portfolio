@@ -3,8 +3,13 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 export function HeroSection() {
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+
   const scrollToAbout = () => {
     const aboutSection = document.querySelector("#about");
     if (aboutSection) {
@@ -24,11 +29,11 @@ export function HeroSection() {
           transition={{ duration: 0.5 }}
           className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary"
         >
-          Welcome to my portfolio
+          {t.badge}
         </motion.div>
 
         <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Hi, I'am Laura Schiavon
+          {t.greeting}
         </h1>
 
         <motion.p
@@ -37,8 +42,7 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mx-auto mb-8 max-w-3xl text-xl text-muted-foreground"
         >
-          A creative developer specializing in building beautiful, functional,
-          and user-friendly digital experiences.
+          {t.subtitle}
         </motion.p>
 
         <motion.div
@@ -57,7 +61,7 @@ export function HeroSection() {
               }
             }}
           >
-            Get in Touch
+            {t.ctaContact}
           </Button>
           <Button
             variant="outline"
@@ -69,7 +73,7 @@ export function HeroSection() {
               }
             }}
           >
-            View My Work
+            {t.ctaProjects}
           </Button>
         </motion.div>
       </div>

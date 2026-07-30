@@ -8,14 +8,19 @@ import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/lib/translations";
 
 export interface Project {
   id: string;
   title: string;
+  titlePt?: string;
   description: string;
+  descriptionPt?: string;
   imageUrl: string;
   demoUrl?: string;
   githubUrl?: string;
+  year?: number;
   technologies: string[];
 }
 
@@ -26,6 +31,13 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language].projects;
+  const title = language === "pt" && project.titlePt ? project.titlePt : project.title;
+  const description =
+    language === "pt" && project.descriptionPt
+      ? project.descriptionPt
+      : project.description;
 
   return (
     <motion.div
@@ -37,14 +49,14 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       className="group relative flex flex-col overflow-hidden rounded-lg border border-border bg-card shadow-md transition-all duration-300 hover:shadow-xl min-h-[500px]"
     >
       {/* Imagem do projeto */}
-      <div className="aspect-video w-full overflow-hidden">
+      <div className="aspect-video w-full overflow-hidden bg-muted">
         <div className="relative h-full w-full">
           <Image
             src={project.imageUrl}
-            alt={project.title}
+            alt={title}
             fill
             className={cn(
-              "object-cover transition-transform duration-500",
+              "object-contain p-6 transition-transform duration-500",
               isHovered ? "scale-110" : "scale-100"
             )}
           />
@@ -54,13 +66,18 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               isHovered ? "opacity-60" : "opacity-0"
             )}
           ></div>
+          {project.year && (
+            <span className="absolute bottom-2 right-2 rounded-md bg-black/70 px-2 py-0.5 text-xs font-medium text-white">
+              {project.year}
+            </span>
+          )}
         </div>
       </div>
 
       {/* Conteúdo do card */}
       <div className="p-5 flex flex-col h-full">
-        <h3 className="text-xl font-bold">{project.title}</h3>
-        <p className="mt-2 text-muted-foreground">{project.description}</p>
+        <h3 className="text-xl font-bold">{title}</h3>
+        <p className="mt-2 text-muted-foreground">{description}</p>
 
         <div className="mt-4 flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
@@ -79,7 +96,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                 target="_blank"
                 className="flex items-center gap-1"
               >
-                View Demo <ArrowUpRight className="h-4 w-4" />
+                {t.viewDemo} <ArrowUpRight className="h-4 w-4" />
               </Link>
             </Button>
           )}
@@ -91,7 +108,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                 target="_blank"
                 className="flex items-center gap-1"
               >
-                <Github className="h-4 w-4" /> Code
+                <Github className="h-4 w-4" /> {t.code}
               </Link>
             </Button>
           )}
