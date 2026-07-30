@@ -38,7 +38,7 @@ export const translations = {
     contact: {
       title: "Get In Touch",
       subtitle:
-        "Interested in working together or have a question? Feel free to reach out using the contact form below or through my contact details.",
+        "Interested in working together or have a question? Feel free to reach out using the contact .",
       infoTitle: "Contact Information",
       email: "Email",
       phone: "Phone",
@@ -94,7 +94,7 @@ export const translations = {
     contact: {
       title: "Entre em Contato",
       subtitle:
-        "Interessado em trabalhar juntos ou tem alguma pergunta? Fique à vontade para entrar em contato pelo formulário abaixo ou pelos meus dados de contato.",
+        "Interessado em trabalhar juntos ou tem alguma pergunta? Fique à vontade para entrar em contato.",
       infoTitle: "Informações de Contato",
       email: "E-mail",
       phone: "Telefone",
@@ -118,7 +118,10 @@ export const directResponseStack = [
   { en: "ClickUp", pt: "ClickUp" },
   { en: "GoDaddy API", pt: "GoDaddy API" },
   { en: "Playwright Automation", pt: "Automação com Playwright" },
-  { en: "Conversion Tracking Pixels", pt: "Pixels de Rastreamento de Conversão" },
+  {
+    en: "Conversion Tracking Pixels",
+    pt: "Pixels de Rastreamento de Conversão",
+  },
   { en: "FTP / cPanel Deployment", pt: "Implantação via FTP/cPanel" },
   { en: "WordPress", pt: "WordPress" },
   { en: "SEO", pt: "SEO" },
