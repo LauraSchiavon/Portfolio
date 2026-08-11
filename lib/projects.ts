@@ -25,6 +25,32 @@ export const projects = [
   },
   {
     id: "project-3",
+    title: "NeuroZen — Black Page",
+    titlePt: "NeuroZen — Página Black",
+    description:
+      "Personal Direct Response project. Advertorial landing page for a health/wellness product, built in an aggressive 'black hat' style disguised as a news article, engineered for high conversion.",
+    descriptionPt:
+      "Projeto pessoal de Direct Response. Landing page advertorial para um produto de saúde/bem-estar, no formato 'black' (mais agressivo), disfarçada de matéria de notícia, otimizada para conversão.",
+    imageUrl: "/image/black.png",
+    demoUrl: "https://neurozen-demo.vercel.app/vsl/",
+    year: 2026,
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: "project-4",
+    title: "NeuroZen — Rede de Pesquisa",
+    titlePt: "NeuroZen — Rede de Pesquisa",
+    description:
+      "Personal Direct Response project. Advertorial landing page for a health/wellness product, built in a scientific research-review style ('Rede de Pesquisa'), engineered for high conversion and ad-platform compliance.",
+    descriptionPt:
+      "Projeto pessoal de Direct Response. Landing page advertorial para um produto de saúde/bem-estar, no formato de revisão científica ('Rede de Pesquisa'), otimizada para conversão e aprovação em plataformas de anúncio.",
+    imageUrl: "/image/rede-pesquisa.png",
+    demoUrl: "https://neurozen-demo.vercel.app/pag/",
+    year: 2026,
+    technologies: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    id: "project-5",
     title: "ARKx Website",
     titlePt: "Site da ARKx",
     description:
@@ -46,7 +72,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-4",
+    id: "project-6",
     title: "Corona Bottle AR Experience",
     titlePt: "Experiência de AR — Garrafa Corona",
     description:
@@ -58,7 +84,7 @@ export const projects = [
     technologies: ["8th Wall", "WebAR", "TypeScript", "Webpack"],
   },
   {
-    id: "project-5",
+    id: "project-7",
     title: "HBT Candy Game (Aleda)",
     titlePt: "HBT Candy Game (Aleda)",
     description:
@@ -70,7 +96,7 @@ export const projects = [
     technologies: ["React", "Material UI", "Supabase", "Recoil", "Anime.js", "Vite"],
   },
   {
-    id: "project-6",
+    id: "project-8",
     title: "Hot Wheels Miniature Generator",
     titlePt: "Gerador de Miniaturas Hot Wheels",
     description:
@@ -82,7 +108,7 @@ export const projects = [
     technologies: ["React", "Three.js", "Express", "Generative AI (Gemini)", "Vite"],
   },
   {
-    id: "project-7",
+    id: "project-9",
     title: "Michelob × USA",
     titlePt: "Michelob × USA",
     description:
@@ -94,7 +120,7 @@ export const projects = [
     technologies: ["Vue.js", "Three.js", "8th Wall", "GSAP"],
   },
   {
-    id: "project-8",
+    id: "project-10",
     title: "Vista Balsa",
     titlePt: "Vista Balsa",
     description:
@@ -106,7 +132,7 @@ export const projects = [
     technologies: ["React", "Express", "TypeScript", "Tailwind", "JSZip"],
   },
   {
-    id: "project-9",
+    id: "project-11",
     title: "Fiat Pulse Abarth × Stranger Things",
     titlePt: "Fiat Pulse Abarth × Stranger Things",
     description:
@@ -125,7 +151,7 @@ export const projects = [
     ],
   },
   {
-    id: "project-10",
+    id: "project-12",
     title: "Vistori Piracicaba WebSite",
     titlePt: "Site da Vistori Piracicaba",
     description:
@@ -139,7 +165,7 @@ export const projects = [
     technologies: ["React", "Vite", "Tailwind", "JavaScript"],
   },
   {
-    id: "project-11",
+    id: "project-13",
     title: "Vistori Louveira WebSite",
     titlePt: "Site da Vistori Louveira",
     description:
@@ -151,7 +177,7 @@ export const projects = [
     technologies: ["React", "Vite", "TypeScript", "Tailwind"],
   },
   {
-    id: "project-12",
+    id: "project-14",
     title: "PlacaNew WebSite",
     titlePt: "Site da PlacaNew",
     description:
@@ -165,7 +191,7 @@ export const projects = [
     technologies: ["React", "Vite", "Tailwind", "JavaScript"],
   },
   {
-    id: "project-13",
+    id: "project-15",
     title: "Organo Alura",
     titlePt: "Organo Alura",
     description:
@@ -178,7 +204,7 @@ export const projects = [
     technologies: ["React", "JavaScript", "CSS"],
   },
   {
-    id: "project-14",
+    id: "project-16",
     title: "Sansch WebSite",
     titlePt: "Site da Sansch",
     description:
@@ -192,7 +218,7 @@ export const projects = [
     technologies: ["Next.js", "Tailwind"],
   },
   {
-    id: "project-15",
+    id: "project-17",
     title: "Senno Website",
     titlePt: "Site da Senno",
     description:
@@ -206,7 +232,7 @@ export const projects = [
     technologies: ["Next.js", "Strapi", "TailwindCSS"],
   },
   {
-    id: "project-16",
+    id: "project-18",
     title: "Abranet WebSite",
     titlePt: "Site da Abranet",
     description:
@@ -220,7 +246,7 @@ export const projects = [
     technologies: ["Next.js", "Strapi", "TailwindCSS"],
   },
   {
-    id: "project-17",
+    id: "project-19",
     title: "Reger Project",
     titlePt: "Projeto Reger",
     description:
@@ -235,7 +261,7 @@ export const projects = [
     technologies: ["React", "TypeScript", "CSS", "Vite"],
   },
   {
-    id: "project-18",
+    id: "project-20",
     title: "Intibiome",
     titlePt: "Intibiome",
     description:
@@ -250,7 +276,7 @@ export const projects = [
     technologies: ["HTML", "CSS"],
   },
   {
-    id: "project-19",
+    id: "project-21",
     title: "Games for people with cognitive problems",
     titlePt: "Jogos para pessoas com problemas cognitivos",
     description:
