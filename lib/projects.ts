@@ -25,8 +25,8 @@ export const projects = [
   },
   {
     id: "project-3",
-    title: "NeuroZen — Black Page",
-    titlePt: "NeuroZen — Página Black",
+    title: "Black Page",
+    titlePt: "Página Black",
     description:
       "Personal Direct Response project. Advertorial landing page for a health/wellness product, built in an aggressive 'black hat' style disguised as a news article, engineered for high conversion.",
     descriptionPt:
@@ -38,8 +38,8 @@ export const projects = [
   },
   {
     id: "project-4",
-    title: "NeuroZen — Rede de Pesquisa",
-    titlePt: "NeuroZen — Rede de Pesquisa",
+    title: "Rede de Pesquisa",
+    titlePt: "Rede de Pesquisa",
     description:
       "Personal Direct Response project. Advertorial landing page for a health/wellness product, built in a scientific research-review style ('Rede de Pesquisa'), engineered for high conversion and ad-platform compliance.",
     descriptionPt:
